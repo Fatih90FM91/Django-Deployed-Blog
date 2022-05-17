@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wce6x-srv4ng10p1=7+a55avm4-ieri6@*^hrf+flb)n5!%vqa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["https://djangoproject2022.herokuapp.com" ,"127.0.0.1"]
 
@@ -122,7 +122,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR , 'staticfiles'),
+#STATIC_ROOT = os.path.join(BASE_DIR , 'staticfiles'),
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
