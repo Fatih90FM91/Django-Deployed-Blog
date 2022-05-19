@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import django_heroku
 import dj_database_url
+import tkinter
 
 from pathlib import Path
 
