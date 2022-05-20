@@ -13,8 +13,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import django_heroku
 import dj_database_url
-#import tkinter
-# from tkinter import Tk
+
+ 
+
+
+# from tkinter import *
+# from tkinter import ttk
+# import _tkinter
+
+# root = _tkinter.TK_VERSION
+# ...
+# print(root.call("info", "patchlevel"))
 
 # top =Tk()
 # top.mainloop()
