@@ -14,6 +14,10 @@ import os
 import django_heroku
 import dj_database_url
 #import tkinter
+from tkinter import Tk
+
+top =Tk()
+top.mainloop()
 
 
 
