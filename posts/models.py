@@ -1,6 +1,7 @@
 from dataclasses import fields
 from distutils.command.upload import upload
 import re
+from django.db.models.deletion import CASCADE
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
