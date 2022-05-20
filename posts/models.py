@@ -20,7 +20,7 @@ class Category(models.Model):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User , null=True , on_delete=models.CASCADE)
+    user = models.OneToOneField(User , null=True , on_delete=CASCADE)#changed!!
     bio =  models.TextField()
     profile_pic = models.ImageField(null=True , blank=True ,upload_to='images/profile/')
     website_url = models.CharField(max_length=50 , null=True , blank=True)
@@ -45,7 +45,7 @@ class Post(models.Model):
     title =models.CharField(max_length=50 )
     header_image =models.ImageField(null=True , blank=True ,upload_to='images/')
     title_tag =models.CharField(max_length=50 ,default="this is My amazing BLOG!!" )
-    author =models.ForeignKey(User,on_delete=models.CASCADE )
+    author =models.ForeignKey(User,on_delete=CASCADE)#changed!!
     # body =models.TextField()
     body =RichTextField(blank=True ,null=True)
     post_date =models.DateField(auto_now_add=True)
@@ -65,7 +65,7 @@ class Post(models.Model):
     
 
 class Comment(models.Model):
-    post = models.ForeignKey(Post,related_name="comments" , on_delete=models.CASCADE )
+    post = models.ForeignKey(Post,related_name="comments" , on_delete=CASCADE )#changed!!
     name = models.CharField(max_length=50 )
     body  = models.TextField(max_length=300 )
     date_added = models.DateTimeField(auto_now_add=True)
