@@ -15,7 +15,10 @@ import django_heroku
 import dj_database_url
 #from decouple import config
 
- 
+import matplotlib
+matplotlib.use('TkAgg')
+
+import matplotlib.pyplot as plt
 
 
 # from tkinter import *
