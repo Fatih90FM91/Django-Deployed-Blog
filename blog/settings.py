@@ -104,25 +104,25 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': str(BASE_DIR / 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
+}
 
 ################Postgersql Database####################################
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd9jmfl5pjq8lua',
-        'USER': 'uhlkdgokqjgkip',
-        'PASSWORD': 'a3484b594c024b442c466c7b615b77bb96721239594e63c76922e4ae3cd1daf9',
-        'HOST': 'ec2-3-224-164-189.compute-1.amazonaws.com',
-        'PORT': '5432',
-        }
-    }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd9jmfl5pjq8lua',
+#         'USER': 'uhlkdgokqjgkip',
+#         'PASSWORD': 'a3484b594c024b442c466c7b615b77bb96721239594e63c76922e4ae3cd1daf9',
+#         'HOST': 'ec2-3-224-164-189.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#         }
+#     }
 
 
 
