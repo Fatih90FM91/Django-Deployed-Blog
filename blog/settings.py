@@ -104,26 +104,25 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': str(BASE_DIR / 'db.sqlite3'),
+#     }
+# }
 
 ################Postgersql Database####################################
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'd9jmfl5pjq8lua',
-#         'USER': 'uhlkdgokqjgkip',
-#         'PASSWORD': 'a3484b594c024b442c466c7b615b77bb96721239594e63c76922e4ae3cd1daf9',
-#         'HOST': 'ec2-3-224-164-189.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#         }
-#     }
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',                #Editting for deploying Heroku........ 'NAME': str(BASE_DIR / 'db.sqlite3'), 
+        'NAME': 'd4n6ag9horhhee', 
+        'HOST' : 'ec2-3-231-82-226.compute-1.amazonaws.com'  ,
+        'PORT' : '5432',  
+        'USER' : 'cbstxgjgrkbrun',
+        'PASSWORD' :'7693d6248f31ee99169513a494deb8c8b9e3ec77b7f2e5db0ab1473dae2b79ae',                                                     
+    }
+}
 
 
 
