@@ -1,7 +1,7 @@
-from dataclasses import fields
-from multiprocessing import context
-from pyexpat import model
-from unicodedata import category
+#from dataclasses import fields
+#from multiprocessing import context
+#from pyexpat import model
+#from unicodedata import category
 from django.shortcuts import render ,get_object_or_404
 from django.views.generic import ListView,DetailView ,CreateView ,UpdateView,DeleteView
 from .forms import PostForm
