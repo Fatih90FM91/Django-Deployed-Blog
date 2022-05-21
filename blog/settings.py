@@ -49,7 +49,7 @@ SECRET_KEY = 'django-insecure-wce6x-srv4ng10p1=7+a55avm4-ieri6@*^hrf+flb)n5!%vqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://djangoblogamazing.herokuapp.com' ,'127.0.0.1']
+ALLOWED_HOSTS = ['https://djangoblogamazing.herokuapp.com']
 
 
 # Application definition
@@ -133,15 +133,15 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'frankdata',
+        'NAME': 'defaultdb',
 
-        'USER': 'postgres',
+        'USER': 'avnadmin',
 
-        'PASSWORD': '19900203',
+        'PASSWORD': 'AVNS_f_TuScUYBF5xWGk',
 
-        'HOST': 'localhost',
+        'HOST': 'frank-database-jonsnow9091-b9e8.aivencloud.com',
 
-        'PORT': '',
+        'PORT': '16906',
 
     }
 
