@@ -49,7 +49,7 @@ SECRET_KEY = 'django-insecure-wce6x-srv4ng10p1=7+a55avm4-ieri6@*^hrf+flb)n5!%vqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://djangoblogamazing.herokuapp.com']
+ALLOWED_HOSTS = ['https://djangoblogamazing.herokuapp.com' ,'127.0.0.1']
 
 
 # Application definition
@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'posts',
     'members',
     'ckeditor',
+    
     
 ]
 
@@ -113,15 +114,37 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 ################Postgersql Database####################################
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',                #Editting for deploying Heroku........ 'NAME': str(BASE_DIR / 'db.sqlite3'), 
+#         'NAME': 'postgres', 
+#         'HOST' : 'localhost',
+#         'PORT' : '5433',  
+#         'USER' : 'postgres',
+#         'PASSWORD' :'19900203',                                                     
+#     }
+# }
+
+
+
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',                #Editting for deploying Heroku........ 'NAME': str(BASE_DIR / 'db.sqlite3'), 
-        'NAME': 'd4n6ag9horhhee', 
-        'HOST' : 'ec2-3-231-82-226.compute-1.amazonaws.com'  ,
-        'PORT' : '5432',  
-        'USER' : 'cbstxgjgrkbrun',
-        'PASSWORD' :'7693d6248f31ee99169513a494deb8c8b9e3ec77b7f2e5db0ab1473dae2b79ae',                                                     
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'frankdata',
+
+        'USER': 'postgres',
+
+        'PASSWORD': '19900203',
+
+        'HOST': 'localhost',
+
+        'PORT': '',
+
     }
+
 }
 
 
@@ -157,7 +180,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
