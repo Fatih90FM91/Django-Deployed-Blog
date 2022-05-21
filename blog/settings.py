@@ -105,12 +105,12 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': str(BASE_DIR / 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
+}
 
 ################Postgersql Database####################################
 
@@ -127,25 +127,25 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 
 
-DATABASES = {
+# DATABASES = {
 
-    'default': {
+#     'default': {
 
-        'ENGINE': 'django.db.backends.postgresql',
+#         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'defaultdb',
+#         'NAME': 'defaultdb',
 
-        'USER': 'avnadmin',
+#         'USER': 'avnadmin',
 
-        'PASSWORD': 'AVNS_f_TuScUYBF5xWGk',
+#         'PASSWORD': 'AVNS_f_TuScUYBF5xWGk',
 
-        'HOST': 'frank-database-jonsnow9091-b9e8.aivencloud.com',
+#         'HOST': 'frank-database-jonsnow9091-b9e8.aivencloud.com',
 
-        'PORT': '16906',
+#         'PORT': '16906',
 
-    }
+#     }
 
-}
+# }
 
 
 
