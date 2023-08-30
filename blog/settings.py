@@ -11,14 +11,14 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-import django_heroku
-import dj_database_url
+# import django_heroku
+# import dj_database_url
 #from decouple import config
 
-import matplotlib
-matplotlib.use('TkAgg')
+# import matplotlib
+# matplotlib.use('TkAgg')
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 # from tkinter import *
@@ -49,7 +49,7 @@ SECRET_KEY = 'django-insecure-wce6x-srv4ng10p1=7+a55avm4-ieri6@*^hrf+flb)n5!%vqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://djangoblogamazing.herokuapp.com']
+ALLOWED_HOSTS = ['https://django-blog-2022-347fe2765ceb.herokuapp.com']
 
 
 # Application definition
@@ -116,12 +116,12 @@ DATABASES = {
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',                #Editting for deploying Heroku........ 'NAME': str(BASE_DIR / 'db.sqlite3'), 
-#         'NAME': 'postgres', 
-#         'HOST' : 'localhost',
-#         'PORT' : '5433',  
-#         'USER' : 'postgres',
-#         'PASSWORD' :'19900203',                                                     
+#         'ENGINE': 'django.db.backends.mysql',                #Editting for deploying Heroku........ 'NAME': str(BASE_DIR / 'db.sqlite3'), 
+#         'NAME': 'defaultdb',
+#         'HOST' : 'kuzey-mysql-jonsnow9091-b9e8.aivencloud.com',
+#         'PORT' : '16906',  
+#         'USER' : 'avnadmin',
+#         'PASSWORD' :'AVNS_cpL0jLvTgqgatu2',                                                     
 #     }
 # }
 
@@ -133,7 +133,7 @@ DATABASES = {
 
 #         'ENGINE': 'django.db.backends.postgresql',
 
-#         'NAME': 'defaultdb',
+#         'NAME': 'postgresql',
 
 #         'USER': 'avnadmin',
 
@@ -141,7 +141,7 @@ DATABASES = {
 
 #         'HOST': 'frank-database-jonsnow9091-b9e8.aivencloud.com',
 
-#         'PORT': '16906',
+#         'PORT': '16907',
 
 #     }
 
@@ -212,4 +212,4 @@ LOGOUT_REDIRECT_URL = 'home'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
+# django.heroku.settings(locals())
